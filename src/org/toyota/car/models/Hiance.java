@@ -4,8 +4,8 @@ import org.toyota.car.cartype.CarVagan;
 import org.toyota.car.details.*;
 
 public class Hiance extends CarVagan {
-    private Wheel safeWheel;
-
+    private Wheel safeWheel; //атрибут запасное колесо.
+//создаем конструктор через Alt+enter
     public Hiance(String color, int maxSpeed, TransmissionType transmissionType, boolean isMove, double price,
                   GasTank gasTank, Wheel[] wheels, Engine engine, Electrics electrics, HeadLights headLights,
                   CarWheelRadius carWheelRadius, int maxWeightTaken, Wheel safeWheel) {
@@ -13,7 +13,7 @@ public class Hiance extends CarVagan {
                 carWheelRadius, maxWeightTaken);
         this.safeWheel = safeWheel;
     }
-
+//создаем геттер и сеттер через alt+enter
     public Wheel getSafeWheel() {
         return safeWheel;
     }

@@ -4,7 +4,7 @@ import org.toyota.car.cartype.CarVagan;
 import org.toyota.car.details.*;
 
 public class Dyna extends CarVagan {
-    private Socket socket;
+    private Socket socket; //атрибут - РОЗЕТКА ДЛЯ ТЕЛЕФОНА, потом создаем ее класс через alt+enter
 
     public Dyna(String color, int maxSpeed, TransmissionType transmissionType, boolean isMove, double price,
                 GasTank gasTank, Wheel[] wheels, Engine engine, Electrics electrics, HeadLights headLights,
@@ -16,5 +16,5 @@ public class Dyna extends CarVagan {
 
     public void chargePhone() {
         this.socket.chargePhone();
-    }
+    } //вызываем метод ЗАРЯДИТЬ ТЕЛЕФОН в обьекте DYNA. Вызываем chargePhone, а он вызывает chargePhone у socket
 }
